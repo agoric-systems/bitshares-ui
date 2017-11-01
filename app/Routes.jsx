@@ -194,6 +194,9 @@ const routes = (
             <Route path="whitelist" getComponent={(location, cb) => {
                 System.import("components/Account/AccountWhitelist").then(loadRoute(cb)).catch(errorLoading);
             }}/>
+            <Route path="hardware-wallet" getComponent={(location, cb) => {
+                System.import("components/Account/AccountHardwareWallet").then(loadRoute(cb)).catch(errorLoading);
+            }}/>
             <Redirect from="overview" to="dashboard" />
         </Route>
         <Route path="deposit-withdraw" getComponent={(location, cb) => {

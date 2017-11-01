@@ -47,6 +47,7 @@ import Help from "./components/Help";
 import InitError from "./components/InitError";
 import LoginSelector from "./components/LoginSelector";
 import CreateWorker from "./components/Account/CreateWorker";
+import AccountHardwareWallet from "./components/Account/AccountHardwareWallet";
 
 const history = __HASH_HISTORY__ ? hashHistory : browserHistory;
 
@@ -119,6 +120,7 @@ const routes = (
             <Route path="deposit-withdraw" component={AccountDepositWithdraw} />
             <Route path="orders" component={AccountOrders} />
             <Route path="whitelist" component={AccountWhitelist} />
+            <Route path="hardware-wallet" component={AccountHardwareWallet} />
             <Redirect from="overview" to="dashboard" />
         </Route>
 
